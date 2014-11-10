@@ -1,0 +1,29 @@
+// Just a basic normalize
+
+html, body {
+    min-height:100%;
+    .font(sans, normal);
+    line-height: 1.28;
+    color: @color-text;
+    
+    // Prevent iOS text size adjust after orientation change, without disabling user zoom.
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+
+    // Font antialias
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+a {
+    background-color: transparent; // For active links IE10
+    color: @color-main;
+    &:active,
+    &:hover {
+        outline: 0;
+    }
+}
+b, strong {
+  font-weight: bold;
+}

@@ -1,0 +1,27 @@
+.fontfamily(@_){}
+.fontfamily(sans) {
+    font-family: @font-family-sans;
+}
+.fontfamily(serif) {
+    font-family: @font-family-serif;   
+}
+
+.font(@_, @_){}
+.font(sans, normal){
+    .fontfamily(sans);
+    font-weight: @font-family-sans-normal;
+}
+.font(sans, bold){
+    .fontfamily(sans);
+    font-weight: @font-family-sans-bold;
+}
+
+.font(@_, @_){}
+.font(serif, normal){
+    .fontfamily(serif);
+    font-weight: @font-family-serif-normal;
+}
+.font(serif, bold){
+    .fontfamily(serif);
+    font-weight: @font-family-serif-bold;
+}

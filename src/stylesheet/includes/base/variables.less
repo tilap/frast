@@ -1,0 +1,52 @@
+// Bootstrap breakpoints
+@screen-xs:                  480px;
+@screen-xs-min:              @screen-xs;
+@screen-phone:               @screen-xs-min;
+@screen-sm:                  768px;
+@screen-sm-min:              @screen-sm;
+@screen-tablet:              @screen-sm-min;
+@screen-md:                  992px;
+@screen-md-min:              @screen-md;
+@screen-desktop:             @screen-md-min;
+@screen-lg:                  1200px;
+@screen-lg-min:              @screen-lg;
+@screen-lg-desktop:          @screen-lg-min;
+@screen-xs-max:              (@screen-sm-min - 1);
+@screen-sm-max:              (@screen-md-min - 1);
+@screen-md-max:              (@screen-lg-min - 1);
+
+// Bootstrap grid system
+@grid-columns:              12;
+@grid-gutter-width:         30px;
+@grid-float-breakpoint:     @screen-sm-min;
+@grid-float-breakpoint-max: (@grid-float-breakpoint - 1);
+@container-tablet:             (720px + @grid-gutter-width);
+@container-sm:                 @container-tablet;
+@container-desktop:            (940px + @grid-gutter-width);
+@container-md:                 @container-desktop;
+@container-large-desktop:      (1140px + @grid-gutter-width);
+@container-lg:                 @container-large-desktop;
+
+@section-padding: 40px;
+
+// Fonts
+@font-family-sans: 'Open Sans';
+@font-family-sans-normal: 400;
+@font-family-sans-bold: 700;
+
+@font-family-serif : 'Montserrat';
+@font-family-serif-normal: 700;
+@font-family-serif-bold: 700;
+
+// Colors
+
+@color-dark: #212223;
+@color-medium: darken(#818283, 10%);
+@color-light: #cacbcc;
+@color-bright: #eff1f2;
+@color-bright: #fafbfc;
+
+@color-text: #2C3E50;
+@color-main: darken(#4ABCDD, 20%);
+
+@border-radius: 4px;

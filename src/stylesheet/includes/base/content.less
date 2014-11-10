@@ -1,0 +1,50 @@
+.content {
+    @margin: 1.5em;
+    ul, blockquote {
+        margin-bottom: @margin;
+    }
+    p {
+        margin-bottom: @margin / 2;
+    }
+    ul {
+        padding-left: @margin;
+        li {
+            list-style-type: circle;
+            list-style-position: outside;
+            padding: 2px 0;
+        }
+        ul {
+            margin-bottom: 0;
+        }
+    }
+    blockquote {
+        color: @color-medium;
+        background: lighten(@color-light, 10%);
+        padding: @margin @margin @margin/2 @margin;
+        border-radius: @border-radius;
+    }
+    strong, b{
+        font-weight: bold;
+    }
+    em, i {
+        font-style: italic;
+        color: @color-medium;
+    }
+    figure {
+        display:block;
+        img {
+            width: 100%;
+        }
+        &.bordered {
+            padding: 5px;
+            background: #fff;
+            border: 1px solid @color-light;
+        }
+        figcaption {
+            text-align: center;
+            color: @color-medium;
+            font-size: .9em;
+            padding: .3em 0;
+        }
+    }
+}

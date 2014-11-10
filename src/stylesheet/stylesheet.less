@@ -1,4 +1,136 @@
-/* Beauty starts here... */
+// Config
+@import (reference) 'includes/base/variables.less';
 
-// If any sprite
-// @import (sprites/sprite.less);
+// Lib
+@import (reference) '../vendor/bootstrap/less/mixins/vendor-prefixes.less';
+@import (reference) 'includes/lib/fonts.less';
+
+// Reset
+@import (less) 'includes/base/reset.css';
+
+body {
+    .font(sans, normal);
+    font-size: 18px;
+    line-height: 1.42;
+    color: @color-text;
+    background: @color-bright;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+a {
+    color: @color-main;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+        color: darken(@color-main, 10%);
+    }
+}
+.clearfix {
+    clear: both;
+}
+// Components
+@import 'includes/components/grid.less';
+@import 'includes/components/buttons.less';
+@import 'includes/components/sections.less';
+@import 'includes/base/type.less';
+@import 'includes/base/content.less';
+
+@toolbar-height: 40px;
+@toolbar-bg: #cccdce;
+@toolbar-color: #777;
+@screen-bg: #113;
+@screen-color1: #ccc;
+@screen-color2: @color-main;
+@screen-prefix: 'user@computer > ';
+@import 'includes/components/screen.less';
+
+
+.intro {
+    height:500px;
+    background-image: url('../assets/bg.png');
+    background-size: cover;
+    background-position:center center;
+    background-repeat: no-repeat;
+    
+    .font(serif, bold);
+    text-transform: uppercase;
+    color: @color-bright;
+
+    border-bottom: 1px solid @color-light;
+
+    &:hover .site-baseline:after {
+        width: 200px;
+    }
+
+    @media (max-width: 680px) {
+        height: auto;
+        padding: 40px 0;
+        background-image: none;
+        background-color: @color-main;
+    }
+}
+.site-title {
+    font-size: 4em;
+    text-align: center;
+    padding-top:150px;
+    @media (max-width: 680px) {
+        font-size: 2.6em;
+        padding-top: 0;
+    }
+}
+.site-baseline {
+    font-size: 3em;
+    text-align: center;
+    word-spacing:.2em;
+    @media (max-width: 680px) {
+        font-size: 2em;
+    }
+}
+
+
+hr {
+    height:1px;
+    margin-top: @section-padding;
+    margin-bottom: @section-padding;
+    background: @color-light;
+    border: 0;
+}
+
+
+.tool-image {
+    padding: 20px 0;
+    text-align: center;
+    img {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+.panel {
+    border: 1px solid @color-light;
+    background: darken(@color-bright, 3%);
+    padding: 20px;
+    border-radius: @border-radius;
+}
+
+.doc{
+    code {
+        font-size: .85em;
+        font-family: "Lucida Console", Monaco, monospace;
+        color: @color-light;
+        background: @color-dark;
+        padding: .6em 1em;
+        margin-top: 2em;
+        border-radius: @border-radius;
+        display: block;
+        &:hover {
+            color: @color-bright;
+        }
+    }
+}
+
+.footer {
+    padding: @section-padding;
+    background: @color-light;
+
+    text-align: center;
+}

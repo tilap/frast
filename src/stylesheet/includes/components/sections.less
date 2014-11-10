@@ -1,0 +1,21 @@
+.section {
+    padding: @section-padding 0;
+    &.section-title-centered{
+        h2 {
+            text-align: center;
+        }
+    }
+    &.section-nobottompadding{
+        padding-bottom: 0;
+    }
+    &.section-blue {
+        background: @color-main;
+        h2, .content {
+            color: #fff;
+        }
+        a {
+            color: #fff;
+            text-decoration: underline;
+        }
+    }
+}

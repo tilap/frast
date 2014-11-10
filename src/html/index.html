@@ -25,9 +25,280 @@
 </head>
 <body>
 
-Hello world !
+<section class="intro">
+    <h1 class="site-title"><%- app.name %></h1>
+    <div class="site-baseline"><%- app.description %></div>
+</section>
+
+<a id="frast-introduction"></a>
+<section class="section section-title-centered">
+    <div class="container">
+        <div class="row content">
+            <div class="col-md-12">
+                <h2>Focus on code &amp; design.<br>Let Frast do the rest.</h2>
+            </div>
+            <div class="col-md-8" data-effect="auto">
+                @@include(markdown('./includes/contents/0-introduction.md'))
+            </div>
+            <div class="col-md-4">
+                <div class="panel">
+                    <p><a href="<%- github.url %>" class="btn primary block"><i class="icon-github"></i> Fork me on Github</a></p>
+                    <p><a href="#frast-install" class="btn secondary block" data-effect="scroll"><i class="icon-doc"></i> Install in a minute</a></p>
+
+                    @@include(markdown('./includes/contents/0-usecases.md'))
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>        
+</section>
+
+<a id="frast-how-it-works"></a>
+<section class="section section-blue">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 content">
+                <h2>How it works.</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 content">
+                <h3>No magic.<br/>Just best practices in a nutshell.</h3>
+                @@include(markdown('./includes/contents/1-how-it-works.md'))
+            </div>
+            <div class="col-md-4 content">
+                <h3>You're the master.<br />Do what YOU want</h3>
+                @@include(markdown('./includes/contents/1-master.md'))
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>        
+</section>
+
+<a id="frast-install"></a>
+<section class="section section-title-centered section-nobottompadding content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Install Frast in a minute</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="screen">
+                    <div class="toolbar">
+                        Terminal
+                    </div>
+                    <div>
+                        <code>
+                            <ol>
+                                <li>git clone http://github.com/tilap/frast.git myproject</li>
+                                <li>cd myproject</li>
+                                <li>make install</li>
+                                <li>make watch</li>
+                            </ol>
+                        </code>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <p>Clone the repo. Install the dependancies. Start coding.</p>
+                <p>You can access all the other magic with a few command lines.</p>
+                <p><a href="#" class="btn secondary"><i class="icon-doc"></i> Read the full doc </a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</section>
+
+<a id="code-fast-and-clean"></a>
+<section class="section section-blue">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>
+                    Code fast &amp; clean.
+                </h2>
+            </div>
+        </div>
+        <div class="row content">
+            <div class="col-md-6">
+                <h3>
+                    Livereload:<br />
+                    See what you're coding.
+                </h3>
+                @@include(markdown('./includes/contents/2-livereload.md'))
+            </div>
+            <div class="col-md-6">
+                <h3>
+                    No more ugly code:<br />
+                    Stay alert on any mistake.
+                </h3>
+                @@include(markdown('./includes/contents/2-cleancode.md'))
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>        
+</section>
+
+
+<a id="external-ressources"></a>
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>
+                    Make your app beautifull.<br />
+                    Use external ressources.
+                </h2>
+            </div>
+        </div>
+        <div class="row content">
+            <div class="col-md-4">
+                @@include(markdown('./includes/contents/3-bower.md'))
+                <figure class="tool-image"><img src="assets/bower-logo.png"></figure>
+            </div>
+            <div class="col-md-4">
+                @@include(markdown('./includes/contents/3-browserify.md'))
+                <figure class="tool-image"><img src="assets/browserify-logo.png"></figure>
+            </div>
+            <div class="col-md-4">
+                @@include(markdown('./includes/contents/3-htmlmd.md'))
+                <figure class="tool-image"><img src="assets/html-logo.png"></figure>
+            </div>
+            <div class="clearfix"></div>        
+        </div>
+
+        <hr>
+        
+        <div class="row content">
+            <div class="col-md-6">
+                @@include(markdown('./includes/contents/3-fakeimages.md'))
+            </div>
+            <div class="col-md-5 col-md-offset-1">
+                <figure class="bordered">
+                    <%- randomImg(400, 250, 'nightlife') %>
+                    <figcaption>
+                        &lt;%- randomImg(400, 250, 'nightlife') %&gt;
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <hr>
+
+        <div class="row content">
+            <div class="col-md-4">
+                <figure class="bordered">
+                    <img src="assets/fontello-sample.png">
+                    <figcaption>
+                        Some few of the fontello available icons
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-md-7 col-md-offset-1">
+                @@include(markdown('./includes/contents/3-fonticons.md'))
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <hr>
+
+        <div class="row content">
+            <div class="col-md-7">
+                @@include(markdown('./includes/contents/3-sprites.md'))
+            </div>
+            <div class="col-md-4 col-md-offset-1">
+                <figure class="bordered">
+                    <img src="assets/sprites.png">
+                    <figcaption>
+                        Sample of generated sprite
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>        
+</section>
+
+<a id="publish"></a>
+<section class="section section-title-centered">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>
+                    Publish on github.io<br>
+                    Only 2 rows needed!
+                </h2>
+            </div>
+        </div>
+        <div class="row content">
+            <div class="col-md-6">
+                @@include(markdown('./includes/contents/4-publish.md'))
+            </div>
+            <div class="col-md-5 col-md-offset-1">
+                <div class="screen">
+                    <div class="toolbar">
+                        Terminal
+                    </div>
+                    <div>
+                        <code>
+                            <ol>
+                                <li>make githubio</li>
+                                <li>make publish</li>
+                            </ol>
+                        </code>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</section>
+
+
+
+<a id="doc"></a>
+<section class="section doc">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>
+                    Documentation
+                </h2>
+            </div>
+        </div>
+        <div class="row content">
+            <div class="col-md-5">
+                <div class="panel">
+                    @@include(markdown('./includes/contents/5-docmake.md'))
+                </div>
+            </div>
+            <div class="col-md-7">
+                @@include(markdown('./includes/contents/5-dochowto.md'))
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    <a href="<%- github.url %>">Open source project</a> by 
+                    <a href="http://twitter.com/<%- author.twitter %>">@<%- author.twitter %></a>
+                </p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</footer>
 
 <!-- build:js js/bundle.js -->
+<script src="../../vendor/jquery/dist/jquery.js"></script>
 <script src="../../tmp/js/app.js"></script>
 <!-- endbuild -->
 

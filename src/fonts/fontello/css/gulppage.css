@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'gulppage';
-  src: url('../font/gulppage.eot?50194647');
-  src: url('../font/gulppage.eot?50194647#iefix') format('embedded-opentype'),
-       url('../font/gulppage.woff?50194647') format('woff'),
-       url('../font/gulppage.ttf?50194647') format('truetype'),
-       url('../font/gulppage.svg?50194647#gulppage') format('svg');
+  src: url('../font/gulppage.eot?6846117');
+  src: url('../font/gulppage.eot?6846117#iefix') format('embedded-opentype'),
+       url('../font/gulppage.woff?6846117') format('woff'),
+       url('../font/gulppage.ttf?6846117') format('truetype'),
+       url('../font/gulppage.svg?6846117#gulppage') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -14,7 +14,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'gulppage';
-    src: url('../font/gulppage.svg?50194647#gulppage') format('svg');
+    src: url('../font/gulppage.svg?6846117#gulppage') format('svg');
   }
 }
 */
@@ -51,3 +51,6 @@
 }
  
 .icon-github:before { content: '\e800'; } /* '' */
+.icon-twitter:before { content: '\e801'; } /* '' */
+.icon-right:before { content: '\e802'; } /* '' */
+.icon-doc:before { content: '\e803'; } /* '' */
