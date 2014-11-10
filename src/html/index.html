@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<!-- include some header stuff givin' it vars -->
+
+@@include('./includes/htmlhead.html', {
+    "applicationName" : "<%- app.name %>",
+    "copyrightYear" : "<%- app.copyright.date %>",
+    "twitterUsername" : "<%- author.twitter %>",
+    "authorName" : "<%- author.name %>",
+    "authorProfileUrl" : "<%- author.name %>",
+    "description" : "<%- app.description %>"
+})
+
+    <!-- fonticon sample -->
+    <link rel="stylesheet" href="fonts/fontello/css/gulppage.css" type='text/css' media='all' />
+
+    <!-- google font for example -->
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- build:css stylesheet/style.css -->
+    <link rel="stylesheet" href="../../tmp/stylesheet/stylesheet.css" />
+    <!-- endbuild -->
+</head>
+<body>
+
+Hello world !
+
+<!-- build:js js/bundle.js -->
+<script src="../../tmp/js/app.js"></script>
+<!-- endbuild -->
+
+</body>
+</html>

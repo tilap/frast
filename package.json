@@ -1,0 +1,51 @@
+{
+  "name": "frast",
+  "description": "Basic frontend page builder over gulp",
+  "version": "0.1.0",
+  "homepage": "",
+  "repository": "tilap/gulppage",
+  "author": "Tilap <jlavinh+gulppage@gmail.com> (http://tilap.net)",
+  "tags": [
+    "gulp",
+    "frontend"
+  ],
+  "bug": {
+    "url": "http://github.com/tilap/gulppage/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.githubusercontent.com/tilap/gulppage/master/LICENCE"
+    }
+  ],
+  "dependencies": {
+    "bower": "1.3.x",
+    "connect-livereload": "0.4.x",
+    "express": "4.8.x",
+    "gulp": "3.8.x",
+    "gulp-browserify": "0.5.x",
+    "gulp-compressor": "0.1.x",
+    "gulp-concat": "2.3.x",
+    "gulp-ejs": "1.0.x",
+    "gulp-file-include": "0.4.x",
+    "gulp-gh-pages": "0.4.x",
+    "gulp-htmlhint": "0.0.x",
+    "gulp-htmlmin": "0.2.x",
+    "gulp-if": "1.2.x",
+    "gulp-imagemin": "1.0.x",
+    "gulp-jshint": "1.8.x",
+    "gulp-less": "1.3.x",
+    "gulp-load-plugins": "0.6.x",
+    "gulp-prompt": "0.1.x",
+    "gulp-rev": "1.1.x",
+    "gulp-rimraf": "0.1.x",
+    "gulp.spritesmith": "1.4.x",
+    "gulp-uglify": "1.0.x",
+    "gulp-usemin": "0.3.x",
+    "markdown": "0.5.x",
+    "mkdirp": "0.5.x",
+    "node-human-logger": "git://github.com/tilap/node-human-logger#v0.1.0",
+    "node-notifier": "3.1.x",
+    "tiny-lr": "0.1.x"
+  }
+}
