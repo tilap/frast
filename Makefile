@@ -32,11 +32,11 @@ publish:
 	gulp clean
 	gulp build
 	gulp deploy
-	# @todo add varnish flush cache
+	sh ghpages-flushcache.sh
 
 # reset: reset the git gh-pages branchs to restart
 githubio:
-	. ghpages-createbranch.sh
+	sh ghpages-createbranch.sh
 
 # Remove all dependencies and compiled paths. Usefull to pack it
 clean:
