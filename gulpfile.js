@@ -336,6 +336,7 @@ gulp.task('watch:gulp', function() {
 // Export ======================================================================
 // =============================================================================
 
+// sometime doesn't work => @tofix before sharing it
 gulp.task('export', function() {
     var dest = config.paths.export || __dirname,
         task = this;
