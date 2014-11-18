@@ -25,13 +25,13 @@ update:
 
 # watch the file for dev working
 watch:
-	gulp
+	$(BIN)/gulp
 
 # deploy the generated dist files to github gh-pages (edit the config file to push on another branch)
 publish:
-	gulp clean
-	gulp build
-	gulp deploy
+	$(BIN)/gulp clean
+	$(BIN)/gulp build
+	$(BIN)/gulp deploy
 	sh ghpages-flushcache.sh
 
 # reset: reset the git gh-pages branchs to restart
@@ -40,7 +40,7 @@ githubio:
 
 # Remove all dependencies and compiled paths. Usefull to pack it
 clean:
-	gulp clean
+	$(BIN)/gulp clean
 	rm -Rf node_modules vendor tmp
 
 
