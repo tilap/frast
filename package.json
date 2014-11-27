@@ -1,7 +1,7 @@
 {
   "name": "frast",
   "description": "Basic frontend page builder over gulp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "",
   "repository": "tilap/gulppage",
   "author": "Tilap <jlavinh+gulppage@gmail.com> (http://tilap.net)",
