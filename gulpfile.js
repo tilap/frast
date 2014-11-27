@@ -102,7 +102,8 @@ gulp.task('less', function() {
         .pipe(
             $.less(config.style.compilation.less.options)
                 .on('error', function(err) {
-                    notifyUser('Style', 'Less compilation failed');
+                    var humanFilename = err.fileName.replace(config.paths.less.src, "");
+                    notifyUser('Style', 'Less error in ' + humanFilename + ' line ' + err.line);
                     logger.error('Less compilation error: ' + err.message, null, 'gulp less');
                     this.emit('end');
                 })
