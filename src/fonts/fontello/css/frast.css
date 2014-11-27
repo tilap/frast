@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'gulppage';
-  src: url('../font/gulppage.eot?50194647');
-  src: url('../font/gulppage.eot?50194647#iefix') format('embedded-opentype'),
-       url('../font/gulppage.woff?50194647') format('woff'),
-       url('../font/gulppage.ttf?50194647') format('truetype'),
-       url('../font/gulppage.svg?50194647#gulppage') format('svg');
+  font-family: 'frast';
+  src: url('../font/frast.eot?65390508');
+  src: url('../font/frast.eot?65390508#iefix') format('embedded-opentype'),
+       url('../font/frast.woff?65390508') format('woff'),
+       url('../font/frast.ttf?65390508') format('truetype'),
+       url('../font/frast.svg?65390508#frast') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -13,14 +13,14 @@
 /*
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
-    font-family: 'gulppage';
-    src: url('../font/gulppage.svg?50194647#gulppage') format('svg');
+    font-family: 'frast';
+    src: url('../font/frast.svg?65390508#frast') format('svg');
   }
 }
 */
  
  [class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "gulppage";
+  font-family: "frast";
   font-style: normal;
   font-weight: normal;
   speak: none;
