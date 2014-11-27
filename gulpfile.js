@@ -77,7 +77,7 @@ function triggerLivereload(event) {
 // Watch generated sources and trigger reload
 gulp.task('livereload', ['livereload:server'], function() {
     var livereloadFolders = [
-        config.paths.html.dist + '/*.html',
+        config.paths.html.dist + '/**/*',
         config.paths.less.dist + '/*.css',
         config.paths.js.dist + '/*.js',
         config.paths.assets.dist + '/**/*'
