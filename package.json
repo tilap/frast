@@ -1,21 +1,21 @@
 {
   "name": "frast",
   "description": "Basic frontend page builder over gulp",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "",
-  "repository": "tilap/gulppage",
-  "author": "Tilap <jlavinh+gulppage@gmail.com> (http://tilap.net)",
+  "repository": "tilap/frast",
+  "author": "Tilap <jlavinh@gmail.com> (http://tilap.net)",
   "tags": [
     "gulp",
     "frontend"
   ],
   "bug": {
-    "url": "http://github.com/tilap/gulppage/issues"
+    "url": "http://github.com/tilap/frast/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://raw.githubusercontent.com/tilap/gulppage/master/LICENCE"
+      "url": "https://raw.githubusercontent.com/tilap/frast/master/LICENCE"
     }
   ],
   "dependencies": {
@@ -23,6 +23,7 @@
     "connect-livereload": "0.4.x",
     "express": "4.8.x",
     "gulp": "3.8.x",
+    "gulp-autoprefixer": "^2.0.0",
     "gulp-browserify": "0.5.x",
     "gulp-compressor": "0.1.x",
     "gulp-concat": "2.3.x",
@@ -46,7 +47,6 @@
     "mkdirp": "0.5.x",
     "node-human-logger": "git://github.com/tilap/node-human-logger#v0.1.0",
     "node-notifier": "3.1.x",
-    "tiny-lr": "0.1.x",
-    "gulp-autoprefixer": "^2.0.0"
+    "tiny-lr": "0.1.x"
   }
 }
