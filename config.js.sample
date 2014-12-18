@@ -21,7 +21,7 @@ module.exports = {
             googleplus: 'https://plus.google.com/u/0/100500349692608932832/posts'
         },
         github: {
-            url: 'http://tilap.github.com/frast/'
+            url: 'http://github.com/tilap/frast/'
         }
     },
     server: {
@@ -83,6 +83,14 @@ module.exports = {
                     paths: ['vendor']
                 }
             },
+            autoprefixer : {
+                enabled : true,
+                // See https://github.com/sindresorhus/gulp-autoprefixer
+                options: {
+                    browsers: ['last 2 versions'],
+                    cascade: false
+                }
+            }
         },
         // see https://github.com/twolfson/gulp.spritesmith#documentation
         // Path for sources, templates and so on are defined in .paths.sprites
