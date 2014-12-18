@@ -107,6 +107,16 @@ gulp.task('less', function() {
                     this.emit('end');
                 })
         )
+        // Autoprefixer
+        .pipe( $.if(
+            config.style.compilation.autoprefixer.enabled,
+            $.autoprefixer(config.style.compilation.autoprefixer.options)
+            .on('error', function(err) {
+                notifyUser('Style', 'Autoprefixer failed');
+                logger.error('autoprefixer error: ' + err.message, null, 'gulp less');
+                this.emit('end');
+            })
+        ) )
         // Move to dist
         .pipe(gulp.dest(config.paths.less.tmp));
 });
