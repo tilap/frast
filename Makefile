@@ -43,6 +43,11 @@ clean:
 	$(BIN)/gulp clean
 	rm -Rf node_modules vendor tmp
 
+export:
+	$(BIN)/gulp clean
+	$(BIN)/gulp build
+	$(BIN)/gulp export
+    
 
 ##################################
 # Fonts stuff
