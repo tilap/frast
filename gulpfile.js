@@ -6,10 +6,10 @@
 
 // Global requirements
 var gulp = require('gulp'),
-    fileinclude = require('gulp-file-include'),
-    ghpages = require('gulp-gh-pages'),
     notification = require('node-notifier'),
-    $ = require('gulp-load-plugins')(),
+    $ = require('gulp-load-plugins')({
+        camelize: true
+    }),
     logger = require('node-human-logger'),
     markdown = require('markdown'),
     mkdirp = require('mkdirp'),
@@ -224,7 +224,7 @@ gulp.task('html', ['html:lint'], function() {
 
     return gulp.src(config.paths.html.src + '/*.html')
         // File include
-        .pipe(fileinclude({
+        .pipe($.fileInclude({
             prefix: '@@',
             basepath: '@file',
             filters: {
@@ -405,7 +405,7 @@ gulp.task('default', ['build', 'server', 'livereload', 'watch', 'watch:gulp'], f
 
 gulp.task('deploy', function () {
     return gulp.src(config.paths.dist + '/**/*')
-        .pipe(ghpages(config.ghpages));
+        .pipe($.ghPages(config.ghpages));
 });
 
 // Clean compiled stylesheet
